@@ -1,0 +1,11 @@
+{
+    "exclude": ["node_modules/*"],
+    "include": ["src/**/*.ts"],
+    "compilerOptions": {
+      "target": "ES5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+      "strict": true,                                   /* Enable all strict type-checking options. */
+      "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+      "strictNullChecks": true,                         /* When type checking, take into account 'null' and 'undefined'. */
+    }
+}
+  
