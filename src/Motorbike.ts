@@ -25,12 +25,7 @@ export default class Motorbike extends VerletPoint {
     this.angularForce += angularForce;
   }
 
-  public render(
-    ctx: CanvasRenderingContext2D,
-    image: HTMLImageElement,
-    clampX?: number | undefined,
-    clampY?: number | undefined
-  ) {
+  public render(ctx: CanvasRenderingContext2D, image: HTMLImageElement, clampX?: number, clampY?: number) {
     ctx.save();
     ctx.translate(~~(clampX ?? this.x), ~~(clampY ?? this.y));
     ctx.rotate(this.rotation);
