@@ -31,7 +31,7 @@ const pressing: { [key: string]: number } = {
 };
 
 const motorbikeImg = new Image();
-motorbikeImg.src = './motorbike.svg';
+motorbikeImg.src = './motorbike-comp.svg';
 
 const motorbike = new Motorbike(0, 0, 20, 0.01);
 const camera = { x: motorbike.x, y: motorbike.y };
@@ -107,8 +107,6 @@ function render(dt: number, fps: number) {
     ctx.restore();
   }
 }
-
-console.log((Math.PI / 2) * TO_DEGREES, Math.PI * 1.75 * TO_DEGREES);
 
 function clear(ctx: Context) {
   ctx.fillStyle = '#00D';
